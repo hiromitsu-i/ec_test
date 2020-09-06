@@ -1,5 +1,8 @@
 @extends('layouts.app')
-
+@section('title','商品詳細')
+@section('description',$item->item_description)
+@section('canonical',url()->current())
+@section('keywords',$item->item_name)
 @section('content')
     <div class="container">
         <div class="row justify-content-center">

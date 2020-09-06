@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('title','入力確認')
+@section('description','入力情報確認ページ')
+@section('canonical',url()->current())
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

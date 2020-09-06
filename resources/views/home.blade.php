@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('title','商品一覧')
+@section('description','商品の一覧ページ')
+@section('canonical',url()->current())
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

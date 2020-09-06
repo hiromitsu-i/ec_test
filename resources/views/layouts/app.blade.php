@@ -7,8 +7,10 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
+    <title>@yield('title') - {{ config('app.name', 'ecc_test') }}</title>
+    <meta name="description" content="@yield('description')">
+    <link rel="canonical" href="@yield('canonical')" />
+    <meta name="keywords" content="通信販売,通販,ショッピング,オンラインショッピング,買い物,プレゼント,ギフト,贈り物,@yield('keywords')">
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 

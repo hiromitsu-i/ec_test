@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('title','ショッピングカート')
+@section('description','ショッピングカートページ')
+@section('canonical',url()->current())
 @section('content')
     <table class="uk-table uk-table-hover uk-table-divider">
         <thead>

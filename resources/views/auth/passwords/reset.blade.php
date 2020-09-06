@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('title','リセット')
+@section('description','パスワードリセットページ')
+@section('canonical',url()->current())
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
