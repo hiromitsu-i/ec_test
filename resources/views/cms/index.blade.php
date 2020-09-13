@@ -1,10 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="on">商品管理</div>
-    <div>注文管理</div>
-    <div><a href="{{@route('item_create')}}">商品登録</a></div>
+    <div class="row">
+        <div class="col-sm on">商品管理</div>
+        <div class="col-sm"><a href="{{@route('delivery_check_index')}}">注文管理</a></div>
+        <div class="col-sm"><a href="{{@route('report')}}">売上レポート</a></div>
+    </div>
     <div class="container">
+        <div><a href="{{@route('item_create')}}">商品登録</a></div>
         <table>
             <tr>
                 <th>商品名</th>

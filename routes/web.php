@@ -42,4 +42,7 @@ Route::middleware('cms')->group(function(){
     Route::get('/cms/item_delete/{item_id}','CmsController@item_delete')->name('item_delete');
     Route::get('/cms/item_create','CmsController@item_create')->name('item_create');
     Route::post('/cms/item_create','CmsController@item_create');
+    Route::get('/cms/delivery_check','DeliveryCheckController@index')->name('delivery_check_index');
+    Route::post('/cms/confirm','DeliveryCheckController@confirm')->name('delivery_confirm');
+    Route::get('/cms/report','ReportController@report')->name('report');
 });

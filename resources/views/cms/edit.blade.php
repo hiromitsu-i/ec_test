@@ -19,7 +19,7 @@
                 {{Form::label('item_tag','商品検索用タグ')}}
                 {{Form::input('text','item_tag',$item->item_tag)}}<br/>
                 {{Form::label('sell_status','販売ステータス')}}
-                {{Form::select('sell_status',[0=>'販売中止',1=>'販売中'],1)}}<br/>
+                {{Form::select('sell_status',[0=>'販売中止',1=>'販売中'],$item->sell_status)}}<br/>
                 {{Form::hidden('id',$item->id)}}
                 {{Form::submit()}}
                 {{Form::close()}}
