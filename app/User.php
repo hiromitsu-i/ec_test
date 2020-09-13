@@ -10,6 +10,9 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+    const ROLE_USER_CUSTOMER = 0;
+    const ROLE_USER_CMS = 1;
+
     /**
      * The attributes that are mass assignable.
      *
@@ -36,4 +39,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function getIsCmsAttribute() {
+
+        return (auth()->user()->role == self::ROLE_USER_CMS);
+
+    }
 }
