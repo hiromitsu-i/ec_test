@@ -17,7 +17,7 @@
         <div class="card-deck">
             @foreach($item_list as $item)
                 <div class="card" style="min-width:150px;margin:15px 15px;">
-                    <img class="card-img-top" src="{{$item->item_url??asset('/img/no_image_250.png')}}" sytle="width:150px;height:150px;" alt="no_image">
+                    <img class="card-img-top" src="{{$item->item_url??asset('/img/no_image_250.png')}}" sytle="width:150px;height:150px;" alt="{{$item->item_name??'no_image'}}">
                     <div class="card-body">
                         <h5 class="card-title">{{$item->item_name}}</h5>
                         <p class="card-text">{{$item->item_description}}</p>
