@@ -45,6 +45,9 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
+                            <a class="nav-link" href="/cart">カートを見る</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="/cms">cmsサイト</a>
                         </li>
                         <!-- Authentication Links -->
